@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <title>Shopping web page </title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <header id = "home">
+        <section class = "menu">
+            <span class = "bar"></span>
+        </section>
+        
+        <section class = "overlay">
+            <nav>
+                <ul>
+                    <li><a href = "#home">Home</a></li>
+                    <li><a href = "#about">Products</a></li>
+                    <li><a href = "#career">Register</a></li>
+                    <li><a href = "#contact">Survey</a></li>
+                     <li><a href = "#contact">Go to google</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class = "main-text">
+            <h1>Welcome</h1>
+            <h2>Online shop</h2>
+            <a href = "#about" class= "btn main-btn">Explore</a>
+        </section>
+    </header>
+    <main>
+        <section id= "story">
+            <section class="container" id="about">
+                <section class = "center profile-image">
+                    <!-- <img src = "images/about2.jpg">-->
+                </section>
+                 <section class = "center add-padding-left">
+                     <h1 class = "custom-font">Discover</h1>
+                     <h2 class="custom-font-secondary">Online shop</h2>
+                    <p>This online shop deliver numerous brand both men and women clothes. Most of the brands are the top quality and famous around the globe. 
+                    </p>
+                     <br>
+                    <a href = "#" class = "btn-info">Want more, please register</a>
+                </section>
+            </section>
+           
+        </section>
+         <section class="career add-flex" id="career">
+            <section id= "between-sec">
+                <h1 class="custom-font">Register</h1>
+                <h2 class="custom-font-secondary between-sec-color">Form</h2>
+                <div class="main-container">
+            <h3 class="custom-font-secondary">
+                Personal Information
+            </h3>
+            <form class="form-section">
+                <table class="table table-section" align="center" cellspacing="10">
+                    <tr class="table-content">
+                        <td>First name:</td>
+                        <td> <input type="text" class="input" placeholder="Please enter your first name" id="fname" name="fname" value="">
+                            <span id="erroname"></span><br>
+                        </td>
+
+
+                    </tr>
+                    <tr class="table-content">
+
+                        <td>Last name:</td>
+                        <td> <input type="text" class="input" placeholder="Please enter your last name" id="lname" name="lname" value="">
+                            <span id="errolname"></span><br>
+                        </td>
+
+                    </tr>
+                    <tr class="table-content">
+                        <td>Mobie number:</td>
+                        <td> <input type="text" class="input" placeholder="Please enter your mobile number" id="numberMobi" name="numberMobi" value="">
+                            <span id="erroMobi"></span><br>
+                        </td>
+
+                    </tr>
+
+                    <tr class="table-content">
+                        <td>Home Address:</td>
+                        <td>
+                            <textarea class="input" placeholder="Please enter your postal address" id="homeAdd" cols='25' rows="5"></textarea>
+                            <span id="erroHome"></span><br>
+                        </td>
+
+                    </tr>
+
+                    <tr class="table-content">
+                        <td>Email Address:</td>
+                        <td><input type="email" class="input" placeholder="Please enter your email address" id="email" name="emailAdd" value=""><br>
+
+                            <span id="erroEmail"></span><br>
+                        </td>
+
+                    </tr>
+
+
+                    <tr class="table-content">
+                        <td>Gender: </td>
+
+                        <td>
+                            <input type="radio" id="gender" name="gender" value="male">
+                            Male
+                            <input type="radio" id="gender" name="gender" value="female">
+                            Female<br>
+                            <span id="erroGender"></span><br>
+                        </td>
+
+                    </tr>
+
+                    <tr class="input">
+                        <td>State: </td>
+                        <td> <select id="state" list="state" name="state" value="Select State"> 
+                                <option selected="selected" value="Select State">Select State
+                                <option value="NSW">NSW </option>
+                                <option value="VIC">VIC </option>
+                                <option value="WA"> WA </option>
+                                <option value="QLS">QLS </option>
+                                <option value="SA">SA </option>
+                            </select>
+                            <span id="erroState"></span><br>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td> How did you hear us? </td>
+                        <td> 
+                                <input type="checkbox" name="hearUs" id="hearUs" value="Web Site">WebSite 
+                                <input type="checkbox" name="hearUs" id="hearUs" value="TV Ads">TV Ads
+                                <input type="checkbox" name="hearUs" id="hearUs" value="Print Ads">Print Ads 
+                                <input type="checkbox" name="hearUs" id="hearUs" value="Friends">Friends 
+                        </td>
+                            <span id="erroHear"></span><br>
+                        </td>
+                        
+                    </tr>
+                    <tr class="table-content">
+                        <td> Would you recommend us? </td>
+                        <td> <input type="radio" id="reco" name="reco" value="Yes">
+                            <label for="male">Yes</label>
+                            <input type="radio" id="reco" name="reco" value="No">
+                            <label for="male">No</label>
+                            <span id="erroreco"></span><br>
+                        </td>
+                    </tr>
+
+                    <tr class="table-content">
+                        <td>
+                            <button type="button" class="input btn btn-submit" name="submit" onclick="getInfo()"> Register </button>
+                            <button type="clear" class="input btn btn-submit" name="clear">Clear</button>
+                        </td>
+
+                    </tr>
+
+
+                </table>
+            </form>
+
+        </div>
+    </div>
+            </section>
+        </section>
+        <section class = "leisure" id="leisure">
+            <section id ="between-sec">
+                <h1 class = "custom-font">Products</h1>
+                <h2 class="custom-font-secondary">More</h2>
+                    <section class="image-group">
+                    <img src= "images/hobby1.jpg" class= "btn-pic1" alt="coffee">
+                    <img src="images/hobby2.jpg" class= "btn-pic2"alt="tech">
+                    <img src="images/hobby3.jpg" class= "btn-pic3"alt="travel">
+                    <img src="images/hobby4.jpg" class= "btn-pic4"alt="music">
+                    </section>
+            
+            </section>
+        </section>
+        <section class = "contact-us" id= "contact">
+            <section  class = "container">
+                <section class="center add-padding-right">
+                    <h1 class = "custom-font">Survey</h1>
+                    <ol class="table-list">
+                            <li>Need improvements</li>
+                            <li>Satisfactory</li>
+                            <li>Good</li>
+                            <li>Very Good</li>
+                            <li>Excellent</li>
+                        </ol></h2>
+                </section>
+                <section class = "form-container add-flex"
+                    <form action = "">
+                        <input type="text" class="input" placeholder="Durability" name = "satisfaction" required>
+                        <input type="text" class="input" placeholder="Style/Design" name = "satisfaction" required>
+                        <input type="text" class="input" placeholder="Eco friendliness" name = "satisfaction" required>
+                        <input type="text" class="input" placeholder="Customer service" name = "satisfaction" required>
+                        <input type="text" class="input" placeholder="Quality of product" name = "satisfaction" required>
+                        <textarea name="message" class="text-area" placeholder="What else we need to improve?" required></textarea>
+                        <button type="submit" class="input btn btn-submit" onclick="survey()"> Submit </button>
+                        <button type="submit" class="input btn btn-submit" onclick="refresh()"> Clear </button>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <div  class = "indicator">
+                <span> </span>
+                <span> </span>
+        </div> 
+</main>
+    <footer>
+        <section class="happyhour">
+            <h4>Contact us</h4>
+                <section class="location">
+                    <h5>500 Collins street 
+                        <br>
+                            Melbourne ,VIC -3000
+                    </h5>
+                </section>
+        </section>
+        <section class="happyhour">
+            <h4>Happy hour</h4>
+                <section class="days">
+                    <h5> 24 / 7 
+                        <br>
+                    </h5>
+                </section>
+        </section>
+    </footer>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type = "text/javascript" src="js/script.js"></script>
+</body>
+</html>

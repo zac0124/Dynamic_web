@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jun 27, 2020 at 02:10 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `fashionwave`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `productdetail`
+--
+
+CREATE TABLE `productdetail` (
+  `id` int(11) NOT NULL,
+  `productname` varchar(100) NOT NULL,
+  `category` varchar(80) DEFAULT NULL,
+  `description` varchar(500) DEFAULT NULL,
+  `price` varchar(50) DEFAULT NULL,
+  `photo` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `productdetail`
+--
+
+INSERT INTO `productdetail` (`id`, `productname`, `category`, `description`, `price`, `photo`) VALUES
+(1, 'pro1', 'men', 'suit', '$100', 'images/product1.jpg'),
+(2, 'pro2', 'men', 'suit', '$110', 'images/product2.jph'),
+(3, 'pro3', 'men', 'suit', '$112', 'images/product3'),
+(4, 'pro4', 'men', 'suit', '$123', 'images/product4'),
+(5, 'pro5', 'men', 'suit', '$150', 'images/product5'),
+(6, 'pro6', 'men', 'suit', '$130', 'images/product6'),
+(7, 'pro7', 'men', 'suit', '$150', 'images/product7'),
+(8, 'pro8', 'men', 'suit', '$120', 'images/product8'),
+(9, 'pro9', 'men', 'suit', '$190', 'images/product9'),
+(10, 'pro10', 'men', 'suit', '$200', 'images/product10');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `productdetail`
+--
+ALTER TABLE `productdetail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `productdetail`
+--
+ALTER TABLE `productdetail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
